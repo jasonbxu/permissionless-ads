@@ -1,0 +1,23 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <title>Hilbert Curve Demo</title>
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div>
+            <svg id="svg" width="1280" height="1280" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1280 1280">
+                <polyline id="curve" points="" style="fill:none;stroke:black;stroke-width:1"/>
+            </svg>
+        </div>
+        <script src="js/main.js"></script>
+        <script>
+            var canvas = document.getElementById('canvas');
+
+            hilbertDemo(canvas, 1280, 128, 4096*4);
+        </script>
+    </body>
+</html>
